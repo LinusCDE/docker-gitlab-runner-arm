@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      uses: docker/build-push-action@v1
+      with:
+        username: linuscde
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        repository: linuscde/gitlab-runner-arm
+        add_git_labels: true
