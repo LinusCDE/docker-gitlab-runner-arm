@@ -19,4 +19,5 @@ jobs:
           username: linuscde
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: linuscde/gitlab-runner-arm
+          tags: latest
           add_git_labels: true
