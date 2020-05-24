@@ -1,5 +1,6 @@
 # docker-gitlab-runner-arm
 
+![CI](https://github.com/LinusCDE/docker-gitlab-runner-arm/workflows/CI/badge.svg)
 
 This contains GitLabs official GitLab-Runner binary for arm (32 bit by default).
 
